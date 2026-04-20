@@ -1,30 +1,27 @@
 import React from 'react'
 import Vedio from './components/Background/Vedio'
 import { Canvas } from '@react-three/fiber'
+import Laltern from './components/models/Laltern'
 
 
 const App = () => {
   return (
     <>
-    return (
+   
     <div className="relative min-h-screen w-full">
       {/* --- Permanent Video Background --- */}
-   <Vedio/> 
+  <Vedio/>  
 
       {/* --- Content Overlay --- */}
       <div className="relative z-10 w-full h-screen">
         
-       <Canvas dpr={[1, 2]} gl={{ antialias: true }} orthographic camera={{ zoom:50, position: [5, 5, 5] }}>
-         <ambientLight intensity={0.6} />
-      <directionalLight position={[5, 8, 5]}   intensity={1.8} castShadow shadow-mapSize={[2048, 2048]} />
-      <directionalLight position={[-5, 3, -3]} intensity={0.5} />
-      <directionalLight position={[0, 4, -8]}  intensity={0.3} />
-      <directionalLight position={[0, -2, 3]}  intensity={0.2} />
+  {/*      <Canvas dpr={[1, 2]} gl={{ antialias: true }} orthographic camera={{ zoom:0, position: [5, 5, 5] }}> */}
+      
    
-    
+     <Canvas  orthographic camera={{ zoom: 20, position: [0, 0, 5] }} dpr={[1, 2]} gl={{ antialias: true }}>
    
-       <OrbitControls />
-
+     
+<Laltern/>
        </Canvas>
       </div>
     </div>
