@@ -1,5 +1,5 @@
 # 3D Web Project
-
+Live-https://splendid-platypus-5ec3dd.netlify.app/
 A modern 3D web application built with React, Vite, and Three.js for rendering interactive 3D models and visualizations.
 
 ## Project Structure
