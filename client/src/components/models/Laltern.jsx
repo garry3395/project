@@ -10,7 +10,7 @@ const Laltern = () => {
     console.log(scene.position)
    
   })
-  const { position, rotation, scale } = useControls({
+/*   const { position, rotation, scale } = useControls({
     position: {
       value: [0,0,0],
       step: 0.1,
@@ -20,7 +20,7 @@ const Laltern = () => {
       step: 0.01,
     },
     scale: 1
-  })
+  }) */
   const asteroidConfigs = [
     { 
       position:[-13.2,-3.4,-13.4], 
@@ -49,6 +49,7 @@ const Laltern = () => {
     rotation:[9.29,0.30,3.16],
     scale:0.1
    },
+   {/**If you want to use leva */}
       /*  {
       position:position,
       rotation:rotation,  
